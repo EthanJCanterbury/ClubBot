@@ -1,0 +1,12 @@
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+.env
+.env.keys
+node_modules
+db.json
+users.txt
+*.csv
+data.json
+data2.json
