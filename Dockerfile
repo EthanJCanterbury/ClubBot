@@ -3,8 +3,8 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY pyproject.toml ./
-RUN pip install --no-cache-dir .
+# Install dependencies directly
+RUN pip install --no-cache-dir flask>=3.1.1 requests>=2.32.4
 
 COPY main.py ./
 
