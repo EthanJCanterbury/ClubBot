@@ -1,0 +1,294 @@
+2025-Jul-15 03:53:33.712509
+Preparing container with helper image: ghcr.io/coollabsio/coolify-helper:1.0.8.
+2025-Jul-15 03:53:43.291155
+----------------------------------------
+2025-Jul-15 03:53:43.298257
+Importing EthanJCanterbury/ClubBot:main (commit sha HEAD) to /artifacts/v0wk8ckw84ssw0k08wossco0.
+2025-Jul-15 03:53:53.577290
+Image not found (y80g008k8kco8wk4koogkksg:97c1f04f2e817ebbfd891be22d1ba749c3ee642a). Building new image.
+2025-Jul-15 03:54:10.897068
+----------------------------------------
+2025-Jul-15 03:54:10.905944
+Building docker image started.
+2025-Jul-15 03:54:10.913175
+To check the current progress, click on Show Debug Logs.
+2025-Jul-15 03:54:21.869781
+Oops something is not okay, are you okay? 😢
+2025-Jul-15 03:54:21.879103
+#0 building with "default" instance using docker driver
+2025-Jul-15 03:54:21.879103
+2025-Jul-15 03:54:21.879103
+#1 [internal] load build definition from Dockerfile
+2025-Jul-15 03:54:21.879103
+#1 transferring dockerfile: 262B done
+2025-Jul-15 03:54:21.879103
+#1 DONE 0.0s
+2025-Jul-15 03:54:21.879103
+2025-Jul-15 03:54:21.879103
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+2025-Jul-15 03:54:21.879103
+#2 DONE 0.1s
+2025-Jul-15 03:54:21.879103
+2025-Jul-15 03:54:21.879103
+#3 [internal] load .dockerignore
+2025-Jul-15 03:54:21.879103
+#3 transferring context: 195B done
+2025-Jul-15 03:54:21.879103
+#3 DONE 0.0s
+2025-Jul-15 03:54:21.879103
+2025-Jul-15 03:54:21.879103
+#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:139020233cc412efe4c8135b0efe1c7569dc8b28ddd88bddb109b764f8977e30
+2025-Jul-15 03:54:21.879103
+#4 DONE 0.0s
+2025-Jul-15 03:54:21.879103
+2025-Jul-15 03:54:21.879103
+#5 [2/5] WORKDIR /app
+2025-Jul-15 03:54:21.879103
+#5 CACHED
+2025-Jul-15 03:54:21.879103
+2025-Jul-15 03:54:21.879103
+#6 [internal] load build context
+2025-Jul-15 03:54:21.879103
+#6 transferring context: 5.17kB done
+2025-Jul-15 03:54:21.879103
+#6 DONE 0.0s
+2025-Jul-15 03:54:21.879103
+2025-Jul-15 03:54:21.879103
+#7 [3/5] COPY pyproject.toml ./
+2025-Jul-15 03:54:21.879103
+#7 DONE 0.1s
+2025-Jul-15 03:54:21.879103
+2025-Jul-15 03:54:21.879103
+#8 [4/5] RUN pip install --no-cache-dir .
+2025-Jul-15 03:54:21.879103
+#8 1.779 Processing /app
+2025-Jul-15 03:54:21.879103
+#8 1.781   Installing build dependencies: started
+2025-Jul-15 03:54:21.879103
+#8 3.875   Installing build dependencies: finished with status 'done'
+2025-Jul-15 03:54:21.879103
+#8 3.876   Getting requirements to build wheel: started
+2025-Jul-15 03:54:21.879103
+#8 4.075   Getting requirements to build wheel: finished with status 'error'
+2025-Jul-15 03:54:21.879103
+#8 4.082   error: subprocess-exited-with-error
+2025-Jul-15 03:54:21.879103
+#8 4.082
+2025-Jul-15 03:54:21.879103
+#8 4.082   × Getting requirements to build wheel did not run successfully.
+2025-Jul-15 03:54:21.879103
+#8 4.082   │ exit code: 1
+2025-Jul-15 03:54:21.879103
+#8 4.082   ╰─> [67 lines of output]
+2025-Jul-15 03:54:21.879103
+#8 4.082       configuration error: `project.authors[0]` must be object
+2025-Jul-15 03:54:21.879103
+#8 4.082       GIVEN VALUE:
+2025-Jul-15 03:54:21.879103
+#8 4.082           "Your Name <you@example.com>"
+2025-Jul-15 03:54:21.879103
+#8 4.082
+2025-Jul-15 03:54:21.879103
+#8 4.082       OFFENDING RULE: 'type'
+2025-Jul-15 03:54:21.879103
+#8 4.082
+2025-Jul-15 03:54:21.879103
+#8 4.082       DEFINITION:
+2025-Jul-15 03:54:21.879103
+#8 4.082           {
+2025-Jul-15 03:54:21.879103
+#8 4.082               "$id": "#/definitions/author",
+2025-Jul-15 03:54:21.879103
+#8 4.082               "title": "Author or Maintainer",
+2025-Jul-15 03:54:21.879103
+#8 4.082               "$comment": "https://peps.python.org/pep-0621/#authors-maintainers",
+2025-Jul-15 03:54:21.879103
+#8 4.082               "type": "object",
+2025-Jul-15 03:54:21.879103
+#8 4.082               "additionalProperties": false,
+2025-Jul-15 03:54:21.879103
+#8 4.082               "properties": {
+2025-Jul-15 03:54:21.879103
+#8 4.082                   "name": {
+2025-Jul-15 03:54:21.879103
+#8 4.082                       "type": "string",
+2025-Jul-15 03:54:21.879103
+#8 4.082                       "$$description": [
+2025-Jul-15 03:54:21.879103
+#8 4.082                           "MUST be a valid email name, i.e. whatever can be put as a name, before an",
+2025-Jul-15 03:54:21.879103
+#8 4.082                           "email, in :rfc:`822`."
+2025-Jul-15 03:54:21.879103
+#8 4.082                       ]
+2025-Jul-15 03:54:21.879103
+#8 4.082                   },
+2025-Jul-15 03:54:21.879103
+#8 4.082                   "email": {
+2025-Jul-15 03:54:21.879103
+#8 4.082                       "type": "string",
+2025-Jul-15 03:54:21.879103
+#8 4.082                       "format": "idn-email",
+2025-Jul-15 03:54:21.879103
+#8 4.082                       "description": "MUST be a valid email address"
+2025-Jul-15 03:54:21.879103
+#8 4.082                   }
+2025-Jul-15 03:54:21.879103
+#8 4.082               }
+2025-Jul-15 03:54:21.879103
+#8 4.082           }
+2025-Jul-15 03:54:21.879103
+#8 4.082
+2025-Jul-15 03:54:21.879103
+#8 4.082       For more details about `format` see
+2025-Jul-15 03:54:21.879103
+#8 4.082       https://validate-pyproject.readthedocs.io/en/latest/api/validate_pyproject.formats.html
+2025-Jul-15 03:54:21.879103
+#8 4.082
+2025-Jul-15 03:54:21.879103
+#8 4.082       Traceback (most recent call last):
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/usr/local/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+2025-Jul-15 03:54:21.879103
+#8 4.082           main()
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/usr/local/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+2025-Jul-15 03:54:21.879103
+#8 4.082           json_out['return_val'] = hook(**hook_input['kwargs'])
+2025-Jul-15 03:54:21.879103
+#8 4.082                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/usr/local/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 118, in get_requires_for_build_wheel
+2025-Jul-15 03:54:21.879103
+#8 4.082           return hook(config_settings)
+2025-Jul-15 03:54:21.879103
+#8 4.082                  ^^^^^^^^^^^^^^^^^^^^^
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/tmp/pip-build-env-py_15xi5/overlay/lib/python3.11/site-packages/setuptools/build_meta.py", line 331, in get_requires_for_build_wheel
+2025-Jul-15 03:54:21.879103
+#8 4.082           return self._get_build_requires(config_settings, requirements=[])
+2025-Jul-15 03:54:21.879103
+#8 4.082                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/tmp/pip-build-env-py_15xi5/overlay/lib/python3.11/site-packages/setuptools/build_meta.py", line 301, in _get_build_requires
+2025-Jul-15 03:54:21.879103
+#8 4.082           self.run_setup()
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/tmp/pip-build-env-py_15xi5/overlay/lib/python3.11/site-packages/setuptools/build_meta.py", line 512, in run_setup
+2025-Jul-15 03:54:21.879103
+#8 4.082           super().run_setup(setup_script=setup_script)
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/tmp/pip-build-env-py_15xi5/overlay/lib/python3.11/site-packages/setuptools/build_meta.py", line 317, in run_setup
+2025-Jul-15 03:54:21.879103
+#8 4.082           exec(code, locals())
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "<string>", line 1, in <module>
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/tmp/pip-build-env-py_15xi5/overlay/lib/python3.11/site-packages/setuptools/__init__.py", line 115, in setup
+2025-Jul-15 03:54:21.879103
+#8 4.082           return distutils.core.setup(**attrs)
+2025-Jul-15 03:54:21.879103
+#8 4.082                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/tmp/pip-build-env-py_15xi5/overlay/lib/python3.11/site-packages/setuptools/_distutils/core.py", line 160, in setup
+2025-Jul-15 03:54:21.879103
+#8 4.082           dist.parse_config_files()
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/tmp/pip-build-env-py_15xi5/overlay/lib/python3.11/site-packages/setuptools/dist.py", line 756, in parse_config_files
+2025-Jul-15 03:54:21.879103
+#8 4.082           pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/tmp/pip-build-env-py_15xi5/overlay/lib/python3.11/site-packages/setuptools/config/pyprojecttoml.py", line 72, in apply_configuration
+2025-Jul-15 03:54:21.879103
+#8 4.082           config = read_configuration(filepath, True, ignore_option_errors, dist)
+2025-Jul-15 03:54:21.879103
+#8 4.082                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/tmp/pip-build-env-py_15xi5/overlay/lib/python3.11/site-packages/setuptools/config/pyprojecttoml.py", line 140, in read_configuration
+2025-Jul-15 03:54:21.879103
+#8 4.082           validate(subset, filepath)
+2025-Jul-15 03:54:21.879103
+#8 4.082         File "/tmp/pip-build-env-py_15xi5/overlay/lib/python3.11/site-packages/setuptools/config/pyprojecttoml.py", line 61, in validate
+2025-Jul-15 03:54:21.879103
+#8 4.082           raise ValueError(f"{error}\n{summary}") from None
+2025-Jul-15 03:54:21.879103
+#8 4.082       ValueError: invalid pyproject.toml config: `project.authors[0]`.
+2025-Jul-15 03:54:21.879103
+#8 4.082       configuration error: `project.authors[0]` must be object
+2025-Jul-15 03:54:21.879103
+#8 4.082       [end of output]
+2025-Jul-15 03:54:21.879103
+#8 4.082
+2025-Jul-15 03:54:21.879103
+#8 4.082   note: This error originates from a subprocess, and is likely not a problem with pip.
+2025-Jul-15 03:54:21.879103
+#8 4.084 error: subprocess-exited-with-error
+2025-Jul-15 03:54:21.879103
+#8 4.084
+2025-Jul-15 03:54:21.879103
+#8 4.084 × Getting requirements to build wheel did not run successfully.
+2025-Jul-15 03:54:21.879103
+#8 4.084 │ exit code: 1
+2025-Jul-15 03:54:21.879103
+#8 4.084 ╰─> See above for output.
+2025-Jul-15 03:54:21.879103
+#8 4.084
+2025-Jul-15 03:54:21.879103
+#8 4.084 note: This error originates from a subprocess, and is likely not a problem with pip.
+2025-Jul-15 03:54:21.879103
+#8 4.174
+2025-Jul-15 03:54:21.879103
+#8 4.174 [notice] A new release of pip is available: 24.0 -> 25.1.1
+2025-Jul-15 03:54:21.879103
+#8 4.174 [notice] To update, run: pip install --upgrade pip
+2025-Jul-15 03:54:21.879103
+#8 ERROR: process "/bin/sh -c pip install --no-cache-dir ." did not complete successfully: exit code: 1
+2025-Jul-15 03:54:21.879103
+------
+2025-Jul-15 03:54:21.879103
+> [4/5] RUN pip install --no-cache-dir .:
+2025-Jul-15 03:54:21.879103
+4.084 error: subprocess-exited-with-error
+2025-Jul-15 03:54:21.879103
+4.084
+2025-Jul-15 03:54:21.879103
+4.084 × Getting requirements to build wheel did not run successfully.
+2025-Jul-15 03:54:21.879103
+4.084 │ exit code: 1
+2025-Jul-15 03:54:21.879103
+4.084 ╰─> See above for output.
+2025-Jul-15 03:54:21.879103
+4.084
+2025-Jul-15 03:54:21.879103
+4.084 note: This error originates from a subprocess, and is likely not a problem with pip.
+2025-Jul-15 03:54:21.879103
+4.174
+2025-Jul-15 03:54:21.879103
+4.174 [notice] A new release of pip is available: 24.0 -> 25.1.1
+2025-Jul-15 03:54:21.879103
+4.174 [notice] To update, run: pip install --upgrade pip
+2025-Jul-15 03:54:21.879103
+------
+2025-Jul-15 03:54:21.879103
+Dockerfile:6
+2025-Jul-15 03:54:21.879103
+--------------------
+2025-Jul-15 03:54:21.879103
+4 |
+2025-Jul-15 03:54:21.879103
+5 |     COPY pyproject.toml ./
+2025-Jul-15 03:54:21.879103
+6 | >>> RUN pip install --no-cache-dir .
+2025-Jul-15 03:54:21.879103
+7 |
+2025-Jul-15 03:54:21.879103
+8 |     COPY main.py ./
+2025-Jul-15 03:54:21.879103
+--------------------
+2025-Jul-15 03:54:21.879103
+ERROR: failed to solve: process "/bin/sh -c pip install --no-cache-dir ." did not complete successfully: exit code: 1
+2025-Jul-15 03:54:21.879103
+exit status 1
+2025-Jul-15 03:54:21.887566
+Deployment failed. Removing the new version of your application.
+2025-Jul-15 03:54:28.477186
+Gracefully shutting down build container: v0wk8ckw84ssw0k08wossco0
