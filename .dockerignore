@@ -1,0 +1,17 @@
+
+.git
+.gitignore
+README.md
+.replit
+replit.nix
+explorpheus/
+attached_assets/
+uv.lock
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.coverage
+.pytest_cache/
